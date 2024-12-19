@@ -1,0 +1,8 @@
+CREATE TABLE notifications (
+    id SERIAL PRIMARY KEY,
+    utilisateur_id INT NOT NULL REFERENCES utilisateur(id_utilisateur) ON DELETE CASCADE,
+    type ENUM('confirmation', 'refus', 'rappel') NOT NULL,
+    message TEXT NOT NULL,
+    envoye_le TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+je veux avoir une animation comme suit: lorsqu'on survol le menu parametres, l'icone se deplace vers la gauche comme une rou et un text parametres commence a  s'afficher depuis la droite vers la gauche.

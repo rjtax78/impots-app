@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primar-light: #473b33;
+  --clr-pumpkin: #fe6c00;
+  --clr-white: #fff;
+  --clr-silver: #a8a5a6;
+  --clr-silver-v1: #bdbabb;
+  --clr-scarlet: #fe1e00;
+  --clr-scarlet-v1: rgb(254, 30, 0, 0.79);
+  --clr-green: #00fe93;
+  --clr-yellow: #fec80a;
+  --clr-peach: #ffc397;
+  --clr-primary: #29221d;
+  --clr-jet: #302924;
+  --clr-secondary: #1e1611;
+  --clr-black: #000;
+
+  --font-family-bai: "Bai Jamjuree", sans-serif;
+  --transition-default: all 300ms ease-in-out;
+}
+
+body {
+  font-family: var(--font-family-bai);
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.body::-webkit-scrollbar {
+  width: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.img-fit-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* height: 100%; */
+}
+
+.main {
+  width: calc(100vw - 260px);
+  margin-left: 260px;
+  padding: 0px 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    width: calc(100vw - 72px);
+    margin-left: 72px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    padding: 30px 5px;
+  }
+}
+
+.ant-table-tbody .ant-table-row:hover {
+  background-color: none !important;
+}
+
+.ant-table-tbody .ant-table-row:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.ant-table-content .table-layout .ant-table-thead tr {
+  background-color: red;
+}
+
+.right-div {
+  background-image: url('/R.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

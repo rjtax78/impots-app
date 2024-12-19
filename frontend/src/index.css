@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* styles.css */
+::-webkit-scrollbar {
+  width: 6px; /* Largeur de la barre verticale */
+  height: 6px; /* Largeur de la barre horizontale */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563; /* Couleur du curseur */
+  border-radius: 9999px; /* Coins arrondis */
+}
+
+::-webkit-scrollbar-track {
+  background: #d1d5db; /* Couleur de la piste */
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
